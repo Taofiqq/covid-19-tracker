@@ -6,3 +6,19 @@
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
   }
+  
+@media(max-width:573px) {
+   .header {
+       font-size: 28px;
+   }
+}
+@media(max-width:391px) {
+   .header {
+       font-size: 23px;
+   }
+}
+@media(max-width:275px) {
+    .header {
+        font-size: 14.5px;
+    }
+ }
