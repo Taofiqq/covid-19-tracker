@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+body {
+    background-color: #f3f0ff;
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
