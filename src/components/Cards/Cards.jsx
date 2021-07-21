@@ -8,7 +8,7 @@ import cx from 'classnames'
 const Cards = ( {data: {confirmed, recovered, deaths, lastUpdate}}) => {
     // console.log(props);
     if(!confirmed) {
-        return 'Loading'
+        return 'Fetching Data..'
     }
     return (
         <div className={styles.container}>

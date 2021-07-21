@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 body {
-    background-color: #f3f0ff;
+    background-color: #FFEBC9;
     font-family: 'Work Sans', sans-serif;
 }
 .container {
@@ -8,4 +8,18 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.image {
+    width: 270px;
+    margin-top: 3rem;
+}
+
+@media(max-width:770px) {
+    .container {
+        margin: 0 10%;
+    }
+    .image {
+        width: 100%
+    }
 }
