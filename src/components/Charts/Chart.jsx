@@ -44,7 +44,7 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
             data={{
                 labels:['Infected', 'Recovered', 'Deaths'],
                 datasets: [{
-                    label: 'Cases', 
+                    label: 'People', 
                     backgroundColor: [
                        'rgba(0,0, 255, 0.5)', 
                        'rgba(0, 255, 0, 0.5)', 
@@ -55,11 +55,11 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
             }}
             options={{
                 legend: {display: false},
-                title: {display:true, text:`Current state in ${country}`}
+                title: {display:true, text:`Current state in ${country}`},
             }}
             />
         ):null
-    )
+    );
     return (
         <div className={cx(styles.container, styles.chartFont)}>
            {country ? barChart : lineChart}

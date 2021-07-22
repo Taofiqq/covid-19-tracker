@@ -32,6 +32,11 @@
     
 }
 
+@media(max-width:963px) {
+    .card {
+    margin: 2% 3% !important
+    }
+}
 @media(max-width:770px) {
     .card {
     margin: 2% 0 !important
