@@ -2,7 +2,7 @@
     margin-top: 2%;
     font-weight: bold !important;
 }
-p {
+.para {
     background: #C04848;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -13,7 +13,26 @@ p {
     text-align: center;
 }
 
+span {
+    display:inline-block;
+    font-size : 1.2rem;
+    transform: translateY(.3rem);
+}
 
+.footerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.footerLink {
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    color: #212529;
+}
+.footerLink:hover {
+    color: #4F0E0E;
+}
 @media(max-width:380px) {
     p {
         font-size: .7rem;

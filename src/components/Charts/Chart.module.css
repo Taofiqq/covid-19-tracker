@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 .container {
     display: flex;
     justify-content: center;
     width: 50%;
+    
 }
-
+.chartFont {
+    font-family: 'Work Sans', sans-serif;
+}
 @media(max-width:770px) {
     .container {
         width: 100%

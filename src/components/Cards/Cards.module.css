@@ -7,21 +7,29 @@
 .card {
     margin: 0 2% !important;
     border-radius: .9rem !important;
-    background: #16222A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: #1E212D !important;
+    color: #fff !important;
 }
+.cardContent {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: bold;
+    color: #fff !important;
+    margin-bottom: .5rem !important;
+}
+
 .infected {
     border-top: 10px solid rgba(0,0,255,0.5);
+    margin-bottom: .1rem !important;
     
     
 }
 .recovered {
-    border-bottom: 10px solid rgba(0,255,0,0.5)
+    border-top: 10px solid rgba(0,255,0,0.5);
+    color: #fff !important;
 }
 .deaths {
-    border-bottom: 10px solid rgba(255,0,0,0.5)
+    border-top: 10px solid rgba(255,0,0,0.5);
+    
 }
 
 @media(max-width:770px) {

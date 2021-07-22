@@ -2,6 +2,7 @@ import React , {useState, useEffect} from 'react'
 import {fetchDailyData} from '../../api';
 import {Line, Bar} from 'react-chartjs-2';
 
+import cx from 'classnames'
 import styles from './Chart.module.css'
 
 const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
@@ -18,17 +19,18 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
     const lineChart = (
        dailyData.length
        ? (
-        <Line data={{
+        <Line className={styles.chartFont} data={{
             labels:dailyData.map(({date}) => date),
             datasets: [{
-                data:dailyData.map(({confirmed})=> confirmed),
-                label: 'Infected',
-                borderColor: 'green', 
+                data:dailyData.map(({confirmed}) => confirmed),
+                label: 'Infected Cases',
+                borderColor: '#54E346', 
+                className: styles.chartFont,
                 fill: true
             }, {
                 data:dailyData.map(({deaths})=> deaths),
-                label: 'Infected',
-                borderColor: 'red', 
+                label: 'Deaths Cases',
+                borderColor: '#AF2D2D', 
                 fill: true
             }]
         }}
@@ -42,7 +44,7 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
             data={{
                 labels:['Infected', 'Recovered', 'Deaths'],
                 datasets: [{
-                    label: 'People', 
+                    label: 'Cases', 
                     backgroundColor: [
                        'rgba(0,0, 255, 0.5)', 
                        'rgba(0, 255, 0, 0.5)', 
@@ -59,7 +61,7 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
         ):null
     )
     return (
-        <div className={styles.container}>
+        <div className={cx(styles.container, styles.chartFont)}>
            {country ? barChart : lineChart}
         </div>
     )
