@@ -2410,6 +2410,11 @@
   dependencies:
     "color-convert" "^2.0.1"
 
+"anychart@^8.10.0":
+  "integrity" "sha512-laVYJ8GwXkzPWnkFFv3ObJsZHEIVdtB4O68n6K12IDpz6e+xaip9rmAVgJsZ4OIQB6NDyYsPfju/6qVlw64CjQ=="
+  "resolved" "https://registry.npmjs.org/anychart/-/anychart-8.10.0.tgz"
+  "version" "8.10.0"
+
 "anymatch@^2.0.0":
   "integrity" "sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw=="
   "resolved" "https://registry.npmjs.org/anymatch/-/anymatch-2.0.0.tgz"

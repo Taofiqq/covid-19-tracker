@@ -22,10 +22,11 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
         <Line className={styles.chartFont} data={{
             labels:dailyData.map(({date}) => date),
             datasets: [{
+                type:'line',
                 data:dailyData.map(({confirmed}) => confirmed),
                 label: 'Infected Cases',
                 borderColor: '#54E346', 
-                className: styles.chartFont,
+                fontFamily: 'Helvetica',
                 fill: true
             }, {
                 data:dailyData.map(({deaths})=> deaths),
@@ -44,7 +45,7 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
             data={{
                 labels:['Infected', 'Recovered', 'Deaths'],
                 datasets: [{
-                    label: 'People', 
+                    label:`Current covid cases in ${country}`, 
                     backgroundColor: [
                        'rgba(0,0, 255, 0.5)', 
                        'rgba(0, 255, 0, 0.5)', 
@@ -54,7 +55,7 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
                 }]
             }}
             options={{
-                legend: {display: false},
+                legend: {display: false, labels: {fontFamily: 'Arial'}},
                 title: {display:true, text:`Current state in ${country}`},
             }}
             />

@@ -2,13 +2,19 @@
 .container {
     display: flex;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     
 }
 .chartFont {
     font-family: 'Work Sans', sans-serif;
 }
 @media(max-width:770px) {
+    .container {
+        width: 100%
+    }
+}
+
+@media(max-width:370px) {
     .container {
         width: 100%
     }
