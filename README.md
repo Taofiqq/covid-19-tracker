@@ -2,6 +2,5 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The codvid-19 tracker app was build with reactjs and material-ui to fetch the covid daily updates from the API(https://covid19.mathdro.id/api) and also a feature that allows the user to select any country and get the update with regards to the selected country. 
-
+As the fight against COVID-19 continues, monitoring the pandemic’s progress has become a top priority. Awareness is essential in the wake of a crisis for citizens and data scientists alike. In this app, COVID-19 statistics (daily total confirmed, recovered and death cases) was fetched and outputted through an API. There is an option for the user to select their country of preference and follow up to date with the cases in their respective countries.  
 Link to the finished project : https://covid-19-trackeer.netlify.app/
